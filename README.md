@@ -1,4 +1,4 @@
-# Express JWT Authentication POC
+# Express JWT Authentication POC with Typescript
 
 This proof of concept (POC) demonstrates the authentication flow using REST APIs with both access tokens and refresh tokens.
 
