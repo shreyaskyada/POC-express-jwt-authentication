@@ -1,0 +1,28 @@
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "shreyas"
+}
+
+###
+
+GET http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2hyZXlhcyIsImlhdCI6MTcwODk1NDcyNSwiZXhwIjoxNzA4OTU1NjI1fQ.96p8WbAVOPXp9yTq87n0a8ciRNQ8QbYD1n3kyQ1xXzM
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2hyZXlhcyIsImlhdCI6MTcwODk1NDcyNX0.2cQJ-LTejPSKcCySvTQPy2omCII4MAeZl1Kzv7yG2Nk
+
+###
+
+POST http://localhost:3000/auth/token
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2hyZXlhcyIsImlhdCI6MTcwODk1NDcyNX0.2cQJ-LTejPSKcCySvTQPy2omCII4MAeZl1Kzv7yG2Nk"
+}
+
+###
+
+DELETE http://localhost:3000/auth/logout
+
+{
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2hyZXlhcyIsImlhdCI6MTcwODk1NDcyNX0.2cQJ-LTejPSKcCySvTQPy2omCII4MAeZl1Kzv7yG2Nk"
+}
